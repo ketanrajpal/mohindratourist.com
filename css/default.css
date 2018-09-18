@@ -1,0 +1,290 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url("reset.css");
+@import url("jquery.bxslider.css");
+@import url("jquery.fancybox.css");
+a {
+	text-decoration: none;
+	transition: all 0.4s ease;
+}
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#header-one, footer {
+	background-color: #366092;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+	font-size: 17px;
+	color:#ededed;
+}
+#header-one ul, footer ul, #center {
+	width: 1200px;
+	margin: auto;
+}
+#header-one li, footer li {
+	padding: 10px;
+}
+
+#center
+{
+	padding:30px 0px;
+}
+
+#header-one a, footer a {
+	color: #FFF;
+	font-weight:bold;
+}
+#header-two, #tabs {
+	width: 1200px;
+	margin: auto;
+	padding: 30px 0px;
+}
+#tabs article {
+	float: left;
+	width: 380px;
+	margin-right: 30px;
+}
+#tabs article:nth-child(3) {
+	margin-right: 0px;
+}
+#tabs h1, #center h1 {
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+	font-size: 25px;
+	font-weight: 700;
+	padding-bottom: 10px;
+}
+
+#center h1
+{
+	color:#366092;
+}
+
+#tabs p, #tags p, p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 150%;
+	margin-top: 15px;
+}
+#tabs a {
+	margin-top: 30px;
+	display: inline-block;
+	padding: 8px 15px;
+	background-color: #000;
+	color: #FFF;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+	font-size: 17px;
+	border-radius: 4px;
+}
+#tabs a:hover {
+	background-color: #fcb721;
+	color: #000;
+	box-shadow: 0px 0px 5px #ededed;
+}
+#slider {
+	background-color: #f5f5f5;
+}
+#tags li:nth-child(1) {
+	float: left;
+}
+#tags li:nth-child(2) {
+	float: left;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+	font-size: 40px;
+	margin-left: 30px;
+	font-weight: 300;
+}
+#tags li span {
+	color: #366092;
+	font-weight: 700;
+}
+#tags article:nth-child(3) {
+	margin-right: 0px;
+}
+#tags article {
+	width: 380px;
+	float: left;
+	margin-right: 30px;
+}
+#slider #inner-slider, #tags #inner-tags {
+	width: 1200px;
+	margin: auto;
+}
+#header-two nav {
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+	font-size: 17px;
+	margin-top: 30px;
+}
+#header-two nav li {
+	float: left;
+	margin-left: 20px;
+}
+#header-two nav a {
+	color: #000;
+	display: block;
+	padding: 10px 17px;
+	border-radius: 4px;
+}
+#header-two nav a.current, #header-two nav a:hover {
+	background-color: #fcb721;
+	color: #fff;
+	box-shadow: 0px 0px 5px #ededed;
+}
+#tags {
+	background-color: #f1f1f1;
+	padding: 30px 0px;
+}
+
+.submenu
+{
+	position:absolute;
+	z-index:9999;
+	display:none;
+	padding:10px;
+}
+
+.submenu ul
+{
+	background-color: #fcb721;
+	border-radius:4px;
+}
+
+.submenu li
+{
+	float:none !important;
+	margin:0px !important;
+}
+
+.submenu li a
+{
+	text-align:center;
+	padding:15px;
+}
+
+#contact-page fieldset
+{
+	width:50%;
+	float:left;
+}
+
+#contact-page label
+{
+	display:block;
+	font-size:14px;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:200%;
+	margin-top:20px;
+}
+
+#contact-page input[type='text'], #contact-page input[type='email'], #contact-page input[type='file'], #contact-page textarea, select
+{
+	width:90%;
+	padding:10px;
+	border:1px #ccc solid;
+}
+
+#center article:nth-child(1)
+{
+	width:800px;
+	float:left;
+}
+
+#center article:nth-child(2)
+{
+	width:380px;
+	float:right;
+}
+
+select
+{
+	margin-top:2px;
+}
+
+
+#contact-page input[type='text']:focus, #contact-page input[type='email']:focus, #contact-page textarea:focus
+{
+	border:1px solid #da3028;
+}
+
+#contact-page textarea
+{
+	width:95%;
+	overflow:hidden;
+	height:100px;
+}
+
+input[type=submit]
+{
+	padding:8px 22px;
+	background-color:#da3028;
+	border:none;
+	color:#FFF;
+	cursor:pointer;
+	font-size:16px;
+	margin-top:20px;
+}
+
+input[type=submit]:hover
+{
+	background-color:#000;
+}
+
+#tab img
+{
+	width:500px;
+}
+
+#tab span
+{
+	display:block;
+	background-color:#000;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+	font-size: 17px;
+	width:500px;
+	text-align:center;
+	padding:8px;
+	color:#FFF;
+}
+
+#tab li
+{
+	float:left;
+	margin:50px;
+	cursor:pointer;
+}
+
+#tab li p
+{
+	position:absolute;
+	width:500px;
+	height:300px;
+	background-color:rgba(0,0,0,0.8);
+	padding:15px;
+	color:#FFF;
+	margin:0px;
+	z-index:999;
+	display:none;
+	font-size:16px;
+}
+
+#tab li:hover p
+{
+	display:block;
+	transition: all 0.4s ease;
+}
